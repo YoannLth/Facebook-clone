@@ -7,28 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03F92F409F2041C4690DC53 /* Pods_Facebook_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */; };
 		CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC621E9A44110036FD8C /* AppDelegate.swift */; };
 		CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */; };
 		CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC861E9A487E0036FD8C /* Info.plist */; };
-		CDE6BC8A1E9A487E0036FD8C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC871E9A487E0036FD8C /* Podfile */; };
 		CDE6BC8E1E9A48940036FD8C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */; };
 		CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */; };
 		CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC981E9A48C80036FD8C /* Main.storyboard */; };
 		CDE6BC9D1E9A48D50036FD8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC9C1E9A48D50036FD8C /* ViewController.swift */; };
 		CDE6BC9F1E9A48E90036FD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */; };
+		CDE6BCA11E9A4E5E0036FD8C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BCA01E9A4E5E0036FD8C /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.debug.xcconfig"; sourceTree = "<group>"; };
 		CDE6BC5F1E9A44110036FD8C /* Facebook-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE6BC621E9A44110036FD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Config/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDE6BC861E9A487E0036FD8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Config/Info.plist; sourceTree = "<group>"; };
-		CDE6BC871E9A487E0036FD8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = Config/Podfile; sourceTree = "<group>"; };
 		CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = Config/.swiftlint.yml; sourceTree = "<group>"; };
 		CDE6BC971E9A48C80036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = View/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDE6BC991E9A48C80036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = View/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDE6BC9C1E9A48D50036FD8C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
 		CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ressources/Assets.xcassets; sourceTree = "<group>"; };
+		CDE6BCA01E9A4E5E0036FD8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		D4FD18F1B3EFC8282D33E70E /* Pods-Facebook-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03F92F409F2041C4690DC53 /* Pods_Facebook_clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		943A00EDD66782D46D990E7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2F582D67052E425FBAFB3E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */,
+				D4FD18F1B3EFC8282D33E70E /* Pods-Facebook-clone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDE6BC561E9A44110036FD8C = {
 			isa = PBXGroup;
 			children = (
 				CDE6BC611E9A44110036FD8C /* Facebook-clone */,
 				CDE6BC601E9A44110036FD8C /* Products */,
+				C2F582D67052E425FBAFB3E2 /* Pods */,
+				943A00EDD66782D46D990E7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */,
+				CDE6BCA01E9A4E5E0036FD8C /* Podfile */,
 				CDE6BC861E9A487E0036FD8C /* Info.plist */,
-				CDE6BC871E9A487E0036FD8C /* Podfile */,
 				CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */,
 			);
 			name = Config;
@@ -145,10 +169,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDE6BC711E9A44110036FD8C /* Build configuration list for PBXNativeTarget "Facebook-clone" */;
 			buildPhases = (
+				626BD9BD2F6A06A2A08DD42E /* [CP] Check Pods Manifest.lock */,
 				CDE6BC5B1E9A44110036FD8C /* Sources */,
 				CDE6BC5C1E9A44110036FD8C /* Frameworks */,
 				CDE6BC5D1E9A44110036FD8C /* Resources */,
 				CDE6BC781E9A44810036FD8C /* ShellScript */,
+				9450E04A571F24EC83ACA630 /* [CP] Embed Pods Frameworks */,
+				3CBA19B0EA6F16AF633B092A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +229,9 @@
 				CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */,
 				CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */,
 				CDE6BC8E1E9A48940036FD8C /* .swiftlint.yml in Resources */,
-				CDE6BC8A1E9A487E0036FD8C /* Podfile in Resources */,
 				CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */,
 				CDE6BC9F1E9A48E90036FD8C /* Assets.xcassets in Resources */,
+				CDE6BCA11E9A4E5E0036FD8C /* Podfile in Resources */,
 				CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +239,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3CBA19B0EA6F16AF633B092A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		626BD9BD2F6A06A2A08DD42E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9450E04A571F24EC83ACA630 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CDE6BC781E9A44810036FD8C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,6 +424,7 @@
 		};
 		CDE6BC721E9A44110036FD8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K39GEY9S2K;
@@ -365,6 +438,7 @@
 		};
 		CDE6BC731E9A44110036FD8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4FD18F1B3EFC8282D33E70E /* Pods-Facebook-clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K39GEY9S2K;

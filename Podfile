@@ -4,13 +4,13 @@ platform :ios, '9.0'
 use_frameworks!
 inhibit_all_warnings!
 
-workspace ‘TestNotifications.xcworkspace'
+workspace 'Facebook-clone.xcworkspace'
 
 def all_pods
   pod 'Firebase/Core'
 end
 
-target 'TestNotifications' do
+target 'Facebook-clone' do
     all_pods
 end
 
