@@ -8,20 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC621E9A44110036FD8C /* AppDelegate.swift */; };
-		CDE6BC651E9A44110036FD8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC641E9A44110036FD8C /* ViewController.swift */; };
-		CDE6BC681E9A44110036FD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC661E9A44110036FD8C /* Main.storyboard */; };
-		CDE6BC6A1E9A44110036FD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC691E9A44110036FD8C /* Assets.xcassets */; };
-		CDE6BC6D1E9A44110036FD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC6B1E9A44110036FD8C /* LaunchScreen.storyboard */; };
+		CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */; };
+		CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC861E9A487E0036FD8C /* Info.plist */; };
+		CDE6BC8A1E9A487E0036FD8C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC871E9A487E0036FD8C /* Podfile */; };
+		CDE6BC8D1E9A48940036FD8C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC8B1E9A48940036FD8C /* .gitignore */; };
+		CDE6BC8E1E9A48940036FD8C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */; };
+		CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */; };
+		CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC981E9A48C80036FD8C /* Main.storyboard */; };
+		CDE6BC9D1E9A48D50036FD8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC9C1E9A48D50036FD8C /* ViewController.swift */; };
+		CDE6BC9F1E9A48E90036FD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDE6BC5F1E9A44110036FD8C /* Facebook-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE6BC621E9A44110036FD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDE6BC641E9A44110036FD8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CDE6BC671E9A44110036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDE6BC691E9A44110036FD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CDE6BC6C1E9A44110036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CDE6BC6E1E9A44110036FD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Config/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDE6BC861E9A487E0036FD8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Config/Info.plist; sourceTree = "<group>"; };
+		CDE6BC871E9A487E0036FD8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = Config/Podfile; sourceTree = "<group>"; };
+		CDE6BC8B1E9A48940036FD8C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = Config/.gitignore; sourceTree = "<group>"; };
+		CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = Config/.swiftlint.yml; sourceTree = "<group>"; };
+		CDE6BC971E9A48C80036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = View/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDE6BC991E9A48C80036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = View/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDE6BC9C1E9A48D50036FD8C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ressources/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +63,82 @@
 		CDE6BC611E9A44110036FD8C /* Facebook-clone */ = {
 			isa = PBXGroup;
 			children = (
+				CDE6BC801E9A45330036FD8C /* Config */,
+				CDE6BC7D1E9A451D0036FD8C /* Model */,
+				CDE6BC7E1E9A45220036FD8C /* View */,
+				CDE6BC7F1E9A45290036FD8C /* Controller */,
+				CDE6BC831E9A47230036FD8C /* Services */,
+				CDE6BC841E9A47520036FD8C /* Extensions */,
+				CDE6BC821E9A47060036FD8C /* Helpers */,
+				CDE6BC811E9A45380036FD8C /* Ressources */,
 				CDE6BC621E9A44110036FD8C /* AppDelegate.swift */,
-				CDE6BC641E9A44110036FD8C /* ViewController.swift */,
-				CDE6BC661E9A44110036FD8C /* Main.storyboard */,
-				CDE6BC691E9A44110036FD8C /* Assets.xcassets */,
-				CDE6BC6B1E9A44110036FD8C /* LaunchScreen.storyboard */,
-				CDE6BC6E1E9A44110036FD8C /* Info.plist */,
 			);
 			path = "Facebook-clone";
+			sourceTree = "<group>";
+		};
+		CDE6BC7D1E9A451D0036FD8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CDE6BC7E1E9A45220036FD8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */,
+				CDE6BC981E9A48C80036FD8C /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CDE6BC7F1E9A45290036FD8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6BC9C1E9A48D50036FD8C /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CDE6BC801E9A45330036FD8C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */,
+				CDE6BC861E9A487E0036FD8C /* Info.plist */,
+				CDE6BC871E9A487E0036FD8C /* Podfile */,
+				CDE6BC8B1E9A48940036FD8C /* .gitignore */,
+				CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		CDE6BC811E9A45380036FD8C /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		CDE6BC821E9A47060036FD8C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CDE6BC831E9A47230036FD8C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		CDE6BC841E9A47520036FD8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +151,7 @@
 				CDE6BC5B1E9A44110036FD8C /* Sources */,
 				CDE6BC5C1E9A44110036FD8C /* Frameworks */,
 				CDE6BC5D1E9A44110036FD8C /* Resources */,
+				CDE6BC781E9A44810036FD8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,20 +202,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDE6BC6D1E9A44110036FD8C /* LaunchScreen.storyboard in Resources */,
-				CDE6BC6A1E9A44110036FD8C /* Assets.xcassets in Resources */,
-				CDE6BC681E9A44110036FD8C /* Main.storyboard in Resources */,
+				CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */,
+				CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */,
+				CDE6BC8E1E9A48940036FD8C /* .swiftlint.yml in Resources */,
+				CDE6BC8A1E9A487E0036FD8C /* Podfile in Resources */,
+				CDE6BC8D1E9A48940036FD8C /* .gitignore in Resources */,
+				CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */,
+				CDE6BC9F1E9A48E90036FD8C /* Assets.xcassets in Resources */,
+				CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDE6BC781E9A44810036FD8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDE6BC5B1E9A44110036FD8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDE6BC651E9A44110036FD8C /* ViewController.swift in Sources */,
+				CDE6BC9D1E9A48D50036FD8C /* ViewController.swift in Sources */,
 				CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,20 +244,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CDE6BC661E9A44110036FD8C /* Main.storyboard */ = {
+		CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CDE6BC671E9A44110036FD8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CDE6BC6B1E9A44110036FD8C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDE6BC6C1E9A44110036FD8C /* Base */,
+				CDE6BC971E9A48C80036FD8C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CDE6BC981E9A48C80036FD8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE6BC991E9A48C80036FD8C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
