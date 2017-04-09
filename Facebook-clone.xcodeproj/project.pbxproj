@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A03F92F409F2041C4690DC53 /* Pods_Facebook_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */; };
+		CD653CB81E9A794700731678 /* Varsity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD653CB71E9A794700731678 /* Varsity.ttf */; };
 		CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC621E9A44110036FD8C /* AppDelegate.swift */; };
 		CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */; };
-		CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC861E9A487E0036FD8C /* Info.plist */; };
 		CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */; };
 		CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC981E9A48C80036FD8C /* Main.storyboard */; };
 		CDE6BC9D1E9A48D50036FD8C /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC9C1E9A48D50036FD8C /* SignInVC.swift */; };
@@ -22,6 +22,7 @@
 /* Begin PBXFileReference section */
 		731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.debug.xcconfig"; sourceTree = "<group>"; };
+		CD653CB71E9A794700731678 /* Varsity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Varsity.ttf; path = Ressources/Varsity.ttf; sourceTree = "<group>"; };
 		CDE6BC5F1E9A44110036FD8C /* Facebook-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE6BC621E9A44110036FD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Config/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		CDE6BC811E9A45380036FD8C /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				CD653CB71E9A794700731678 /* Varsity.ttf */,
 				CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */,
 			);
 			name = Ressources;
@@ -193,7 +195,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "yoann lathuiliere";
 				TargetAttributes = {
 					CDE6BC5E1E9A44110036FD8C = {
@@ -228,11 +230,11 @@
 			files = (
 				CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */,
 				CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */,
+				CD653CB81E9A794700731678 /* Varsity.ttf in Resources */,
 				CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */,
 				CDE6BCA31E9A4EFE0036FD8C /* .swiftlint.yml in Resources */,
 				CDE6BC9F1E9A48E90036FD8C /* Assets.xcassets in Resources */,
 				CDE6BCA11E9A4E5E0036FD8C /* Podfile in Resources */,
-				CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
