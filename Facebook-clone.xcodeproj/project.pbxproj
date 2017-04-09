@@ -11,7 +11,6 @@
 		CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */; };
 		CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC861E9A487E0036FD8C /* Info.plist */; };
 		CDE6BC8A1E9A487E0036FD8C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC871E9A487E0036FD8C /* Podfile */; };
-		CDE6BC8D1E9A48940036FD8C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC8B1E9A48940036FD8C /* .gitignore */; };
 		CDE6BC8E1E9A48940036FD8C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */; };
 		CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */; };
 		CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC981E9A48C80036FD8C /* Main.storyboard */; };
@@ -25,7 +24,6 @@
 		CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Config/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDE6BC861E9A487E0036FD8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Config/Info.plist; sourceTree = "<group>"; };
 		CDE6BC871E9A487E0036FD8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = Config/Podfile; sourceTree = "<group>"; };
-		CDE6BC8B1E9A48940036FD8C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = Config/.gitignore; sourceTree = "<group>"; };
 		CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = Config/.swiftlint.yml; sourceTree = "<group>"; };
 		CDE6BC971E9A48C80036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = View/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDE6BC991E9A48C80036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = View/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */,
 				CDE6BC861E9A487E0036FD8C /* Info.plist */,
 				CDE6BC871E9A487E0036FD8C /* Podfile */,
-				CDE6BC8B1E9A48940036FD8C /* .gitignore */,
 				CDE6BC8C1E9A48940036FD8C /* .swiftlint.yml */,
 			);
 			name = Config;
@@ -206,7 +203,6 @@
 				CDE6BC9B1E9A48C80036FD8C /* Main.storyboard in Resources */,
 				CDE6BC8E1E9A48940036FD8C /* .swiftlint.yml in Resources */,
 				CDE6BC8A1E9A487E0036FD8C /* Podfile in Resources */,
-				CDE6BC8D1E9A48940036FD8C /* .gitignore in Resources */,
 				CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */,
 				CDE6BC9F1E9A48E90036FD8C /* Assets.xcassets in Resources */,
 				CDE6BC891E9A487E0036FD8C /* Info.plist in Resources */,
@@ -359,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K39GEY9S2K;
-				INFOPLIST_FILE = "Facebook-clone/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Facebook-clone/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ylth.Facebook-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,7 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K39GEY9S2K;
-				INFOPLIST_FILE = "Facebook-clone/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Facebook-clone/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ylth.Facebook-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
