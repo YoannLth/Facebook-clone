@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A03F92F409F2041C4690DC53 /* Pods_Facebook_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */; };
 		CD653CB81E9A794700731678 /* Varsity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD653CB71E9A794700731678 /* Varsity.ttf */; };
+		CDE670351E9E752500D73EB7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE670341E9E752500D73EB7 /* CustomButton.swift */; };
+		CDE670371E9E755C00D73EB7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE670361E9E755C00D73EB7 /* CustomTextField.swift */; };
+		CDE670401E9E810B00D73EB7 /* Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6703F1E9E810B00D73EB7 /* Rounded.swift */; };
+		CDE670421E9E825000D73EB7 /* Bordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE670411E9E825000D73EB7 /* Bordered.swift */; };
 		CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6BC621E9A44110036FD8C /* AppDelegate.swift */; };
 		CDE6BC881E9A487E0036FD8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */; };
 		CDE6BC9A1E9A48C80036FD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */; };
@@ -23,6 +27,10 @@
 		731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.debug.xcconfig"; sourceTree = "<group>"; };
 		CD653CB71E9A794700731678 /* Varsity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Varsity.ttf; path = Ressources/Varsity.ttf; sourceTree = "<group>"; };
+		CDE670341E9E752500D73EB7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CDE670361E9E755C00D73EB7 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CDE6703F1E9E810B00D73EB7 /* Rounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rounded.swift; sourceTree = "<group>"; };
+		CDE670411E9E825000D73EB7 /* Bordered.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bordered.swift; sourceTree = "<group>"; };
 		CDE6BC5F1E9A44110036FD8C /* Facebook-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE6BC621E9A44110036FD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE6BC851E9A487E0036FD8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Config/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -65,6 +73,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CDE670381E9E759E00D73EB7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6703F1E9E810B00D73EB7 /* Rounded.swift */,
+				CDE670411E9E825000D73EB7 /* Bordered.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		CDE6BC561E9A44110036FD8C = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +103,7 @@
 		CDE6BC611E9A44110036FD8C /* Facebook-clone */ = {
 			isa = PBXGroup;
 			children = (
+				CDE670381E9E759E00D73EB7 /* Protocols */,
 				CDE6BC801E9A45330036FD8C /* Config */,
 				CDE6BC7D1E9A451D0036FD8C /* Model */,
 				CDE6BC7E1E9A45220036FD8C /* View */,
@@ -111,6 +129,8 @@
 			children = (
 				CDE6BC961E9A48C80036FD8C /* LaunchScreen.storyboard */,
 				CDE6BC981E9A48C80036FD8C /* Main.storyboard */,
+				CDE670341E9E752500D73EB7 /* CustomButton.swift */,
+				CDE670361E9E755C00D73EB7 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -307,7 +327,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE6BC9D1E9A48D50036FD8C /* SignInVC.swift in Sources */,
+				CDE670351E9E752500D73EB7 /* CustomButton.swift in Sources */,
+				CDE670421E9E825000D73EB7 /* Bordered.swift in Sources */,
 				CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */,
+				CDE670371E9E755C00D73EB7 /* CustomTextField.swift in Sources */,
+				CDE670401E9E810B00D73EB7 /* Rounded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
