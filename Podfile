@@ -8,6 +8,7 @@ workspace 'Facebook-clone.xcworkspace'
 
 def all_pods
   pod 'Firebase/Core'
+  pod 'FBSDKLoginKit'
 end
 
 target 'Facebook-clone' do

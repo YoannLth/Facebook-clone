@@ -39,7 +39,7 @@
 		CDE6BC991E9A48C80036FD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = View/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDE6BC9C1E9A48D50036FD8C /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = Controller/SignInVC.swift; sourceTree = "<group>"; };
 		CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ressources/Assets.xcassets; sourceTree = "<group>"; };
-		CDE6BCA01E9A4E5E0036FD8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		CDE6BCA01E9A4E5E0036FD8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDE6BCA21E9A4EFE0036FD8C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		D4FD18F1B3EFC8282D33E70E /* Pods-Facebook-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
