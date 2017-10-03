@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+        </array>
         <array key="Varsity.ttf">
             <string>Varsity</string>
         </array>
@@ -38,7 +43,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An other Facebook clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmu-63-Dz3">
-                                <rect key="frame" x="20" y="233" width="374" height="23.666666666666686"/>
+                                <rect key="frame" x="20" y="231.66666666666666" width="374" height="23.666666666666686"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -61,6 +66,9 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJc-Ez-5S6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-Ta-3sz" customClass="CustomTextField" customModule="Facebook_clone" customModuleProvider="target">
                                 <rect key="frame" x="40" y="505" width="334" height="45"/>
@@ -111,17 +119,33 @@ it will be created automaticly</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foxylop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb9-Q3-LIo">
-                                <rect key="frame" x="40" y="190" width="334" height="48"/>
+                                <rect key="frame" x="40" y="190" width="334" height="46.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-Rn-v3i" customClass="CustomButton" customModule="Facebook_clone" customModuleProvider="target">
+                                <rect key="frame" x="40.333333333333343" y="345.66666666666669" width="334" height="45"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Continue with Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookLoginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggm-4J-Rk7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kb9-Q3-LIo" firstAttribute="top" secondItem="OKN-2N-PHZ" secondAttribute="bottom" constant="5" id="2fj-BT-h6i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nmu-63-Dz3" secondAttribute="trailing" id="3pn-IK-wW1"/>
                             <constraint firstItem="D8P-su-gwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="65k-ce-0Nb"/>
+                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6VT-EJ-TBP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hhX-sg-kHb" secondAttribute="trailing" constant="20" id="7vx-c9-VEY"/>
                             <constraint firstItem="Nmu-63-Dz3" firstAttribute="top" secondItem="Kb9-Q3-LIo" secondAttribute="bottom" constant="-5" id="9XM-WW-jGi"/>
                             <constraint firstItem="qtS-Ta-3sz" firstAttribute="width" secondItem="BUU-7e-KPy" secondAttribute="width" id="EXC-yQ-jWy"/>
@@ -139,6 +163,7 @@ it will be created automaticly</string>
                             <constraint firstItem="D8P-su-gwN" firstAttribute="centerX" secondItem="qtS-Ta-3sz" secondAttribute="centerX" id="fSA-0n-9dP"/>
                             <constraint firstItem="hhX-sg-kHb" firstAttribute="top" secondItem="BUU-7e-KPy" secondAttribute="bottom" constant="5" id="flb-dx-WNX"/>
                             <constraint firstItem="hhX-sg-kHb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hK7-34-blg"/>
+                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="height" secondItem="BUU-7e-KPy" secondAttribute="height" id="iOl-tm-H2c"/>
                             <constraint firstItem="hhX-sg-kHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ijB-Zh-Rq4"/>
                             <constraint firstItem="D8P-su-gwN" firstAttribute="width" secondItem="BUU-7e-KPy" secondAttribute="width" id="jCr-6A-d9f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Kb9-Q3-LIo" secondAttribute="trailing" constant="20" id="mb6-Xc-dT4"/>
@@ -148,12 +173,19 @@ it will be created automaticly</string>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhX-sg-kHb" secondAttribute="bottom" constant="20" id="pTE-gc-n1J"/>
                             <constraint firstItem="Kb9-Q3-LIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="sJz-BU-0w8"/>
                             <constraint firstItem="D8P-su-gwN" firstAttribute="height" secondItem="BUU-7e-KPy" secondAttribute="height" id="vak-0V-DpU"/>
+                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="width" secondItem="BUU-7e-KPy" secondAttribute="width" id="xU6-sS-gtw"/>
+                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ztY-Cb-eaT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="qtS-Ta-3sz" id="xns-pn-QwN"/>
+                        <outlet property="facebookLoginButton" destination="FPK-Rn-v3i" id="34m-Vd-6bD"/>
+                        <outlet property="passwordTextField" destination="D8P-su-gwN" id="xAS-2n-9bA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.600000000000001" y="36.431784107946029"/>
+            <point key="canvasLocation" x="20.289855072463769" y="35.869565217391305"/>
         </scene>
     </scenes>
     <resources>

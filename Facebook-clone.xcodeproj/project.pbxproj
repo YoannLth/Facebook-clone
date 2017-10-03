@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A03F92F409F2041C4690DC53 /* Pods_Facebook_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */; };
+		41D7880184513CF326D720E4 /* Pods_Facebook_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A16C6966BCF8E7AC1EFD394 /* Pods_Facebook_clone.framework */; };
 		CD653CB81E9A794700731678 /* Varsity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD653CB71E9A794700731678 /* Varsity.ttf */; };
 		CDE670351E9E752500D73EB7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE670341E9E752500D73EB7 /* CustomButton.swift */; };
 		CDE670371E9E755C00D73EB7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE670361E9E755C00D73EB7 /* CustomTextField.swift */; };
@@ -24,8 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.debug.xcconfig"; sourceTree = "<group>"; };
+		0A16C6966BCF8E7AC1EFD394 /* Pods_Facebook_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F8C5B7C7F9D9D58B2AB9B4 /* Pods-Facebook-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.release.xcconfig"; sourceTree = "<group>"; };
+		BB7EBD6A561DC0C1D6C8F489 /* Pods-Facebook-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.debug.xcconfig"; sourceTree = "<group>"; };
 		CD653CB71E9A794700731678 /* Varsity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Varsity.ttf; path = Ressources/Varsity.ttf; sourceTree = "<group>"; };
 		CDE670341E9E752500D73EB7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		CDE670361E9E755C00D73EB7 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ressources/Assets.xcassets; sourceTree = "<group>"; };
 		CDE6BCA01E9A4E5E0036FD8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDE6BCA21E9A4EFE0036FD8C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
-		D4FD18F1B3EFC8282D33E70E /* Pods-Facebook-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,26 +49,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03F92F409F2041C4690DC53 /* Pods_Facebook_clone.framework in Frameworks */,
+				41D7880184513CF326D720E4 /* Pods_Facebook_clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		943A00EDD66782D46D990E7A /* Frameworks */ = {
+		6DAEC311ACA484CCBF6E4600 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				731A26C3FF8EACD6C9AD8CCD /* Pods_Facebook_clone.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C2F582D67052E425FBAFB3E2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */,
-				D4FD18F1B3EFC8282D33E70E /* Pods-Facebook-clone.release.xcconfig */,
+				BB7EBD6A561DC0C1D6C8F489 /* Pods-Facebook-clone.debug.xcconfig */,
+				A1F8C5B7C7F9D9D58B2AB9B4 /* Pods-Facebook-clone.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -87,8 +79,8 @@
 			children = (
 				CDE6BC611E9A44110036FD8C /* Facebook-clone */,
 				CDE6BC601E9A44110036FD8C /* Products */,
-				C2F582D67052E425FBAFB3E2 /* Pods */,
-				943A00EDD66782D46D990E7A /* Frameworks */,
+				6DAEC311ACA484CCBF6E4600 /* Pods */,
+				F9CA7C90B9F131C0506EC126 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +176,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		F9CA7C90B9F131C0506EC126 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A16C6966BCF8E7AC1EFD394 /* Pods_Facebook_clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,13 +191,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDE6BC711E9A44110036FD8C /* Build configuration list for PBXNativeTarget "Facebook-clone" */;
 			buildPhases = (
-				626BD9BD2F6A06A2A08DD42E /* [CP] Check Pods Manifest.lock */,
+				8244B099037790D40EE52E93 /* [CP] Check Pods Manifest.lock */,
 				CDE6BC5B1E9A44110036FD8C /* Sources */,
 				CDE6BC5C1E9A44110036FD8C /* Frameworks */,
 				CDE6BC5D1E9A44110036FD8C /* Resources */,
 				CDE6BC781E9A44810036FD8C /* ShellScript */,
-				9450E04A571F24EC83ACA630 /* [CP] Embed Pods Frameworks */,
-				3CBA19B0EA6F16AF633B092A /* [CP] Copy Pods Resources */,
+				5DBB13B60C9DDD8053AE4F99 /* [CP] Embed Pods Frameworks */,
+				AB49ABC42127A1A3F96F7218 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,22 +261,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3CBA19B0EA6F16AF633B092A /* [CP] Copy Pods Resources */ = {
+		5DBB13B60C9DDD8053AE4F99 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		626BD9BD2F6A06A2A08DD42E /* [CP] Check Pods Manifest.lock */ = {
+		8244B099037790D40EE52E93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,19 +291,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9450E04A571F24EC83ACA630 /* [CP] Embed Pods Frameworks */ = {
+		AB49ABC42127A1A3F96F7218 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDE6BC781E9A44810036FD8C /* ShellScript */ = {
@@ -450,7 +450,7 @@
 		};
 		CDE6BC721E9A44110036FD8C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 827FC3703A7A3F65AA3F5E94 /* Pods-Facebook-clone.debug.xcconfig */;
+			baseConfigurationReference = BB7EBD6A561DC0C1D6C8F489 /* Pods-Facebook-clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K39GEY9S2K;
@@ -464,7 +464,7 @@
 		};
 		CDE6BC731E9A44110036FD8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4FD18F1B3EFC8282D33E70E /* Pods-Facebook-clone.release.xcconfig */;
+			baseConfigurationReference = A1F8C5B7C7F9D9D58B2AB9B4 /* Pods-Facebook-clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K39GEY9S2K;
