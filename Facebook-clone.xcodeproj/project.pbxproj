@@ -27,6 +27,7 @@
 		0A16C6966BCF8E7AC1EFD394 /* Pods_Facebook_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F8C5B7C7F9D9D58B2AB9B4 /* Pods-Facebook-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.release.xcconfig"; sourceTree = "<group>"; };
 		BB7EBD6A561DC0C1D6C8F489 /* Pods-Facebook-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3CFAF41F8390A6008495C1 /* Facebook-clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Facebook-clone.entitlements"; sourceTree = "<group>"; };
 		CD653CB71E9A794700731678 /* Varsity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Varsity.ttf; path = Ressources/Varsity.ttf; sourceTree = "<group>"; };
 		CDE670341E9E752500D73EB7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		CDE670361E9E755C00D73EB7 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		CDE6BC611E9A44110036FD8C /* Facebook-clone */ = {
 			isa = PBXGroup;
 			children = (
+				CD3CFAF41F8390A6008495C1 /* Facebook-clone.entitlements */,
 				CDE670381E9E759E00D73EB7 /* Protocols */,
 				CDE6BC801E9A45330036FD8C /* Config */,
 				CDE6BC7D1E9A451D0036FD8C /* Model */,
@@ -222,6 +224,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = K39GEY9S2K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -453,6 +460,7 @@
 			baseConfigurationReference = BB7EBD6A561DC0C1D6C8F489 /* Pods-Facebook-clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Facebook-clone/Facebook-clone.entitlements";
 				DEVELOPMENT_TEAM = K39GEY9S2K;
 				INFOPLIST_FILE = "$(SRCROOT)/Facebook-clone/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -467,6 +475,7 @@
 			baseConfigurationReference = A1F8C5B7C7F9D9D58B2AB9B4 /* Pods-Facebook-clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Facebook-clone/Facebook-clone.entitlements";
 				DEVELOPMENT_TEAM = K39GEY9S2K;
 				INFOPLIST_FILE = "$(SRCROOT)/Facebook-clone/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

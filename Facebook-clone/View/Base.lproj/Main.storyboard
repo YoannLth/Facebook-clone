@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,158 +29,174 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="2ww-C1-uMN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox-white" translatesAutoresizingMaskIntoConstraints="NO" id="OKN-2N-PHZ">
-                                <rect key="frame" x="142" y="55" width="130" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="TpS-Vw-U8n"/>
-                                    <constraint firstAttribute="width" constant="130" id="dny-TG-3W0"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An other Facebook clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmu-63-Dz3">
-                                <rect key="frame" x="20" y="231.66666666666666" width="374" height="23.666666666666686"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUU-7e-KPy" customClass="CustomButton" customModule="Facebook_clone" customModuleProvider="target">
-                                <rect key="frame" x="40" y="625" width="334" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="0F6-mG-pBt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="LOGIN">
-                                    <color key="titleColor" red="0.14012593030929565" green="0.63157421350479126" blue="0.85637623071670532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJc-Ez-5S6"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-Ta-3sz" customClass="CustomTextField" customModule="Facebook_clone" customModuleProvider="target">
-                                <rect key="frame" x="40" y="505" width="334" height="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8P-su-gwN" customClass="CustomTextField" customModule="Facebook_clone" customModuleProvider="target">
-                                <rect key="frame" x="40" y="565" width="334" height="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhX-sg-kHb">
-                                <rect key="frame" x="40" y="675" width="334" height="41"/>
-                                <string key="text">If you don't have an account yet,
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb8-6e-ALP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox-white" translatesAutoresizingMaskIntoConstraints="NO" id="OKN-2N-PHZ">
+                                        <rect key="frame" x="122.5" y="20" width="130" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OKN-2N-PHZ" secondAttribute="height" multiplier="1:1" id="NhW-2i-ngc"/>
+                                            <constraint firstAttribute="height" constant="130" id="TpS-Vw-U8n"/>
+                                            <constraint firstAttribute="width" constant="130" id="dny-TG-3W0"/>
+                                            <constraint firstAttribute="width" secondItem="OKN-2N-PHZ" secondAttribute="height" multiplier="1:1" id="sL0-8s-2Lk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foxylop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb9-Q3-LIo">
+                                        <rect key="frame" x="116" y="160" width="142.5" height="47"/>
+                                        <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An other Facebook clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmu-63-Dz3">
+                                        <rect key="frame" x="89.5" y="207" width="195" height="24"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-Ta-3sz" customClass="CustomTextField" customModule="Facebook_clone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="431" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wm0-ei-UJv"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8P-su-gwN" customClass="CustomTextField" customModule="Facebook_clone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="501" width="335" height="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhX-sg-kHb">
+                                        <rect key="frame" x="10" y="658" width="355" height="41"/>
+                                        <string key="text">If you don't have an account yet,
 it will be created automaticly</string>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foxylop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb9-Q3-LIo">
-                                <rect key="frame" x="40" y="190" width="334" height="46.666666666666657"/>
-                                <fontDescription key="fontDescription" name="Varsity" family="Varsity" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-Rn-v3i" customClass="CustomButton" customModule="Facebook_clone" customModuleProvider="target">
-                                <rect key="frame" x="40.333333333333343" y="345.66666666666669" width="334" height="45"/>
-                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Continue with Facebook">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="facebookLoginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggm-4J-Rk7"/>
-                                </connections>
-                            </button>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUU-7e-KPy" customClass="CustomButton" customModule="Facebook_clone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="544" width="335" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pyG-cD-h3e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="LOGIN">
+                                            <color key="titleColor" red="0.14012593030929565" green="0.63157421350479126" blue="0.85637623071670532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJc-Ez-5S6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-Rn-v3i" customClass="CustomButton" customModule="Facebook_clone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="311" width="335" height="40"/>
+                                        <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zWj-Vk-gh1"/>
+                                        </constraints>
+                                        <state key="normal" title="Continue with Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="facebookLoginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggm-4J-Rk7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BUU-7e-KPy" firstAttribute="leading" secondItem="nb8-6e-ALP" secondAttribute="leading" constant="20" id="1kY-sb-fgC"/>
+                                    <constraint firstAttribute="trailing" secondItem="BUU-7e-KPy" secondAttribute="trailing" constant="20" id="2OV-iS-dAz"/>
+                                    <constraint firstItem="D8P-su-gwN" firstAttribute="leading" secondItem="nb8-6e-ALP" secondAttribute="leading" constant="20" id="5NQ-Tt-HHR"/>
+                                    <constraint firstItem="hhX-sg-kHb" firstAttribute="top" secondItem="BUU-7e-KPy" secondAttribute="bottom" constant="64" id="F0U-AQ-VSL"/>
+                                    <constraint firstItem="FPK-Rn-v3i" firstAttribute="leading" secondItem="nb8-6e-ALP" secondAttribute="leading" constant="20" id="F7C-dQ-vBJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="qtS-Ta-3sz" secondAttribute="trailing" constant="20" id="JTc-vG-ODa"/>
+                                    <constraint firstItem="OKN-2N-PHZ" firstAttribute="top" secondItem="nb8-6e-ALP" secondAttribute="top" constant="20" id="NIS-8a-qOl"/>
+                                    <constraint firstItem="Kb9-Q3-LIo" firstAttribute="top" secondItem="OKN-2N-PHZ" secondAttribute="bottom" constant="10" id="NwK-4w-7fO"/>
+                                    <constraint firstItem="qtS-Ta-3sz" firstAttribute="leading" secondItem="nb8-6e-ALP" secondAttribute="leading" constant="20" id="RJV-2x-gJ9"/>
+                                    <constraint firstItem="Nmu-63-Dz3" firstAttribute="top" secondItem="Kb9-Q3-LIo" secondAttribute="bottom" id="RLf-eG-Mnp"/>
+                                    <constraint firstItem="qtS-Ta-3sz" firstAttribute="top" secondItem="FPK-Rn-v3i" secondAttribute="bottom" constant="80" id="Rmc-fG-ZAG"/>
+                                    <constraint firstItem="FPK-Rn-v3i" firstAttribute="centerX" secondItem="nb8-6e-ALP" secondAttribute="centerX" id="Sm6-96-gqI"/>
+                                    <constraint firstAttribute="bottom" secondItem="hhX-sg-kHb" secondAttribute="bottom" constant="30" id="XQZ-4L-ajJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="FPK-Rn-v3i" secondAttribute="trailing" constant="20" id="YcX-d0-aaM"/>
+                                    <constraint firstItem="hhX-sg-kHb" firstAttribute="leading" secondItem="nb8-6e-ALP" secondAttribute="leading" constant="10" id="bf1-0q-wkG"/>
+                                    <constraint firstItem="D8P-su-gwN" firstAttribute="top" secondItem="qtS-Ta-3sz" secondAttribute="bottom" constant="20" id="clz-bm-aBl"/>
+                                    <constraint firstItem="FPK-Rn-v3i" firstAttribute="top" secondItem="Nmu-63-Dz3" secondAttribute="bottom" constant="80" id="eUp-e0-FU3"/>
+                                    <constraint firstItem="Nmu-63-Dz3" firstAttribute="centerX" secondItem="nb8-6e-ALP" secondAttribute="centerX" id="efn-4J-nwD"/>
+                                    <constraint firstItem="Kb9-Q3-LIo" firstAttribute="centerX" secondItem="nb8-6e-ALP" secondAttribute="centerX" id="jGQ-wQ-BOA"/>
+                                    <constraint firstItem="BUU-7e-KPy" firstAttribute="top" secondItem="D8P-su-gwN" secondAttribute="bottom" constant="15" id="kER-Fc-egT"/>
+                                    <constraint firstAttribute="trailing" secondItem="D8P-su-gwN" secondAttribute="trailing" constant="20" id="rYt-nd-vdS"/>
+                                    <constraint firstItem="hhX-sg-kHb" firstAttribute="centerX" secondItem="nb8-6e-ALP" secondAttribute="centerX" id="weg-zU-xo5"/>
+                                    <constraint firstAttribute="trailing" secondItem="hhX-sg-kHb" secondAttribute="trailing" constant="10" id="wn5-py-ENI"/>
+                                    <constraint firstItem="OKN-2N-PHZ" firstAttribute="centerX" secondItem="nb8-6e-ALP" secondAttribute="centerX" id="zqC-QB-fxf"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Kb9-Q3-LIo" firstAttribute="top" secondItem="OKN-2N-PHZ" secondAttribute="bottom" constant="5" id="2fj-BT-h6i"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Nmu-63-Dz3" secondAttribute="trailing" id="3pn-IK-wW1"/>
-                            <constraint firstItem="D8P-su-gwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="65k-ce-0Nb"/>
-                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6VT-EJ-TBP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hhX-sg-kHb" secondAttribute="trailing" constant="20" id="7vx-c9-VEY"/>
-                            <constraint firstItem="Nmu-63-Dz3" firstAttribute="top" secondItem="Kb9-Q3-LIo" secondAttribute="bottom" constant="-5" id="9XM-WW-jGi"/>
-                            <constraint firstItem="qtS-Ta-3sz" firstAttribute="width" secondItem="BUU-7e-KPy" secondAttribute="width" id="EXC-yQ-jWy"/>
-                            <constraint firstItem="BUU-7e-KPy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Ee0-CX-9Tz"/>
-                            <constraint firstItem="Nmu-63-Dz3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HL6-Co-C8F"/>
-                            <constraint firstItem="qtS-Ta-3sz" firstAttribute="height" secondItem="BUU-7e-KPy" secondAttribute="height" id="JZY-Nv-IhG"/>
-                            <constraint firstItem="Nmu-63-Dz3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KNQ-ay-495"/>
-                            <constraint firstItem="OKN-2N-PHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kce-nf-4sp"/>
-                            <constraint firstItem="BUU-7e-KPy" firstAttribute="top" secondItem="D8P-su-gwN" secondAttribute="bottom" constant="15" id="Mhx-RX-5ln"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BUU-7e-KPy" secondAttribute="trailing" constant="20" id="PYf-6Y-kcc"/>
-                            <constraint firstItem="OKN-2N-PHZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="QV9-Ie-cer"/>
-                            <constraint firstItem="Kb9-Q3-LIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UDy-UT-OON"/>
-                            <constraint firstItem="2ww-C1-uMN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VTQ-dD-feP"/>
-                            <constraint firstItem="2ww-C1-uMN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XLL-bx-xsK"/>
-                            <constraint firstItem="D8P-su-gwN" firstAttribute="centerX" secondItem="qtS-Ta-3sz" secondAttribute="centerX" id="fSA-0n-9dP"/>
-                            <constraint firstItem="hhX-sg-kHb" firstAttribute="top" secondItem="BUU-7e-KPy" secondAttribute="bottom" constant="5" id="flb-dx-WNX"/>
-                            <constraint firstItem="hhX-sg-kHb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hK7-34-blg"/>
-                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="height" secondItem="BUU-7e-KPy" secondAttribute="height" id="iOl-tm-H2c"/>
-                            <constraint firstItem="hhX-sg-kHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ijB-Zh-Rq4"/>
-                            <constraint firstItem="D8P-su-gwN" firstAttribute="width" secondItem="BUU-7e-KPy" secondAttribute="width" id="jCr-6A-d9f"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kb9-Q3-LIo" secondAttribute="trailing" constant="20" id="mb6-Xc-dT4"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2ww-C1-uMN" secondAttribute="bottom" id="nbE-8Y-Psd"/>
-                            <constraint firstAttribute="trailing" secondItem="2ww-C1-uMN" secondAttribute="trailing" id="o2o-mg-lSo"/>
-                            <constraint firstItem="D8P-su-gwN" firstAttribute="top" secondItem="qtS-Ta-3sz" secondAttribute="bottom" constant="15" id="of6-AW-Ddy"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhX-sg-kHb" secondAttribute="bottom" constant="20" id="pTE-gc-n1J"/>
-                            <constraint firstItem="Kb9-Q3-LIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="sJz-BU-0w8"/>
-                            <constraint firstItem="D8P-su-gwN" firstAttribute="height" secondItem="BUU-7e-KPy" secondAttribute="height" id="vak-0V-DpU"/>
-                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="width" secondItem="BUU-7e-KPy" secondAttribute="width" id="xU6-sS-gtw"/>
-                            <constraint firstItem="FPK-Rn-v3i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ztY-Cb-eaT"/>
+                            <constraint firstAttribute="trailing" secondItem="nb8-6e-ALP" secondAttribute="trailing" id="98y-qa-Lby"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nb8-6e-ALP" secondAttribute="bottom" id="HGu-lt-T6i"/>
+                            <constraint firstItem="nb8-6e-ALP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WC3-Bi-pek"/>
+                            <constraint firstItem="nb8-6e-ALP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WSu-zo-Zhh"/>
+                            <constraint firstItem="nb8-6e-ALP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="baV-ls-uix"/>
+                            <constraint firstAttribute="trailing" secondItem="2ww-C1-uMN" secondAttribute="trailing" id="ejF-EM-CBG"/>
+                            <constraint firstItem="2ww-C1-uMN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g9v-SJ-gwi"/>
+                            <constraint firstItem="2ww-C1-uMN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="sDB-zU-GFp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2ww-C1-uMN" secondAttribute="bottom" id="v7N-Ui-dxU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="qtS-Ta-3sz" id="xns-pn-QwN"/>
                         <outlet property="facebookLoginButton" destination="FPK-Rn-v3i" id="34m-Vd-6bD"/>
                         <outlet property="passwordTextField" destination="D8P-su-gwN" id="xAS-2n-9bA"/>
+                        <outlet property="scrollView" destination="nb8-6e-ALP" id="RHz-S6-qk7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
