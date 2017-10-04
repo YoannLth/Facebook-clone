@@ -13,26 +13,58 @@ import FBSDKLoginKit
 import Font_Awesome_Swift
 import Firebase
 import FirebaseAuth
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
+  // MARK: Outlets
   @IBOutlet weak var facebookLoginButton: CustomButton!
   @IBOutlet weak var emailTextField: CustomTextField!
   @IBOutlet weak var passwordTextField: CustomTextField!
   @IBOutlet weak var scrollView: UIScrollView!
-  var activeField: UITextField?
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    configureFBButton()
-    
-    self.emailTextField.delegate = self
-    self.passwordTextField.delegate = self
-    registerForKeyboardNotifications()
+  
+  
+  
+  
+  // MARK: Variables
+  var activeField: UITextField?
+
+  
+  
+  
+  // MARK: Functions
+  func firebaseAuth(_ credential: AuthCredential) {
+    Auth.auth().signIn(with: credential) { (user, error) in
+      if error != nil {
+        print("Yoann: Unable to authenticate with Firebase - \(error)")
+      }
+      else {
+        print("Yoann: Successfully authenticated with Firebase")
+        if let user = user {
+          self.completeSignIn(user: user)
+        }
+      }
+    }
   }
-
-
+  
+  // TODO: Move in view
+  func configureFBButton() {
+    facebookLoginButton.setFAText(prefixText: "Continue with Facebook ", icon: .FAFacebookOfficial, postfixText: "", size: 25, forState: .normal)
+    facebookLoginButton.setFATitleColor(color: .white, forState: .normal)
+  }
+  
+  func completeSignIn(user: User) {
+    let result = KeychainWrapper.standard.set(user.uid, forKey: Key.KEY_UID)
+    print(result)
+    performSegue(withIdentifier: Key.SIGNIN_TO_FEED_SEGUE_NAME, sender: Any?)
+  }
+  
+  
+  
+  
+  
+  // MARK: Actions
   @IBAction func facebookLoginButtonPressed(_ sender: Any) {
     let facebookLogin = FBSDKLoginManager()
     
@@ -52,35 +84,26 @@ class SignInVC: UIViewController {
   @IBAction func loginButtonPressed(_ sender: Any) {
     print("Button pressed")
     if let email = emailTextField.text, let password = passwordTextField.text {
-      Auth.auth().signIn(withEmail: email, password: password, completion: { (_, error) in
+      Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
         if error == nil {
           print("Successfully authenticated with Email")
+          if let user = user {
+            self.completeSignIn(user: user)
+          }
         } else {
-          Auth.auth().createUser(withEmail: email, password: password, completion: { (_, error) in
+          Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             if error != nil {
               print("Impossible to create user with Email - \(error)")
+            } else {
+              print("Successfully authenticated with Email")
+              if let user = user {
+                self.completeSignIn(user: user)
+              }
             }
           })
         }
       })
     }
-  }
-  
-  func firebaseAuth(_ credential: AuthCredential) {
-    Auth.auth().signIn(with: credential) { (user, error) in
-      if error != nil {
-        print("Yoann: Unable to authenticate with Firebase - \(error)")
-      }
-      else {
-        print("Yoann: Successfully authenticated with Firebase")
-      }
-    }
-  }
-  
-  // TODO: Move in view
-  func configureFBButton() {
-    facebookLoginButton.setFAText(prefixText: "Continue with Facebook ", icon: .FAFacebookOfficial, postfixText: "", size: 25, forState: .normal)
-    facebookLoginButton.setFATitleColor(color: .white, forState: .normal)
   }
 }
 
@@ -88,10 +111,32 @@ class SignInVC: UIViewController {
 
 
 
+// MARK: Lifecycle
+extension SignInVC {
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    configureFBButton()
+    
+    self.emailTextField.delegate = self
+    self.passwordTextField.delegate = self
+    registerForKeyboardNotifications()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    if let _ = KeychainWrapper.standard.string(forKey: Key.KEY_UID) {
+      performSegue(withIdentifier: Key.SIGNIN_TO_FEED_SEGUE_NAME, sender: Any?)
+    }
+  }
+}
+
+
+
 
 
 extension SignInVC : UITextFieldDelegate {
   // TODO: Hide when keyboard tapped elsewhere
+  // TODO: Display alerts
   
   func registerForKeyboardNotifications() {
     //Adding notifies on keyboard appearing
