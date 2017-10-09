@@ -15,6 +15,8 @@ class FeedVC: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var addPhotoImageView: UIImageView!
   
+  var posts = [Post]()
+  
   @IBAction func signOutButtonPressed(_ sender: Any) {
     do {
       try Auth.auth().signOut()
@@ -25,10 +27,26 @@ class FeedVC: UIViewController {
     }
   }
   
+  func loadFeed(){
+    FirebaseService.sharedInstance.postsRef.observe(DataEventType.value, with: { (snapshot) in
+      if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+        for snap in snapshot {
+          if let postDict = snap.value as? Dictionary<String, AnyObject> {
+            let key = snap.key
+            let post = Post(postKey: key, postData: postDict)
+            self.posts.append(post)
+          }
+        }
+        self.tableView.reloadData()
+      }
+    })
+  }
+  
   override func viewDidLoad() {
     tableView.delegate = self
     tableView.dataSource = self
     
+    loadFeed()
   }
 }
 
@@ -36,14 +54,16 @@ class FeedVC: UIViewController {
 
 extension FeedVC: UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-    return 1
+    return posts.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
     let cell = tableView.dequeueReusableCell(withIdentifier: Key.POST_CELL_IDENTIFIER) as? PostCell
     
     if let postCell = cell {
-      postCell.backgroundColor = UIColor.clear
+      let post = posts[indexPath.row]
+      postCell.configureCell(post: post)
+      
       return postCell
     } else {
       return UITableViewCell()

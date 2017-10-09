@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PostCell: UITableViewCell {
   
@@ -24,10 +25,9 @@ class PostCell: UITableViewCell {
     super.awakeFromNib()
   }
   
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-    
-    // Configure the view for the selected state
+  func configureCell(post: Post) {
+    postTextField.text = post.caption
+    likesLabel.text = "\(post.likes) likes"
+    postImageView.kf.setImage(with: URL(string: post.imageUrl))
   }
-  
 }

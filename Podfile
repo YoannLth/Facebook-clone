@@ -19,6 +19,7 @@ def all_pods
   pod 'FBSDKLoginKit', '~> 4.22.1'
   pod 'FBSDKShareKit', '~> 4.22.1'
   pod 'Font-Awesome-Swift', '~> 1.6.1'
+  pod 'Kingfisher'
   pod 'SwiftKeychainWrapper'
 end
 
