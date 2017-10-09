@@ -12,4 +12,5 @@ struct Key {
   static let KEY_UID = "uid"
   static let SIGNIN_TO_FEED_SEGUE_NAME = "goToFeed"
   static let FEED_TO_SIGNIN_SEGUE_NAME = "goToSignIn"
+  static let POST_CELL_IDENTIFIER = "PostCell"
 }

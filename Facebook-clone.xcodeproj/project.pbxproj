@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		41D7880184513CF326D720E4 /* Pods_Facebook_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A16C6966BCF8E7AC1EFD394 /* Pods_Facebook_clone.framework */; };
+		CD36091A1F8AC209002D46A3 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3609191F8AC209002D46A3 /* PostCell.swift */; };
 		CD653CB81E9A794700731678 /* Varsity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD653CB71E9A794700731678 /* Varsity.ttf */; };
+		CDB632851F8BD3B100375E30 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB632841F8BD3B100375E30 /* CircleView.swift */; };
 		CDDB47B21F856643001EC058 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB47B11F856643001EC058 /* Constants.swift */; };
 		CDDB47B41F856992001EC058 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB47B31F856992001EC058 /* FeedVC.swift */; };
 		CDE670351E9E752500D73EB7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE670341E9E752500D73EB7 /* CustomButton.swift */; };
@@ -29,8 +31,10 @@
 		0A16C6966BCF8E7AC1EFD394 /* Pods_Facebook_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F8C5B7C7F9D9D58B2AB9B4 /* Pods-Facebook-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.release.xcconfig"; sourceTree = "<group>"; };
 		BB7EBD6A561DC0C1D6C8F489 /* Pods-Facebook-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook-clone/Pods-Facebook-clone.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3609191F8AC209002D46A3 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CD3CFAF41F8390A6008495C1 /* Facebook-clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Facebook-clone.entitlements"; sourceTree = "<group>"; };
 		CD653CB71E9A794700731678 /* Varsity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Varsity.ttf; path = Ressources/Varsity.ttf; sourceTree = "<group>"; };
+		CDB632841F8BD3B100375E30 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		CDDB47B11F856643001EC058 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CDDB47B31F856992001EC058 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		CDE670341E9E752500D73EB7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				CDE6BC981E9A48C80036FD8C /* Main.storyboard */,
 				CDE670341E9E752500D73EB7 /* CustomButton.swift */,
 				CDE670361E9E755C00D73EB7 /* CustomTextField.swift */,
+				CD3609191F8AC209002D46A3 /* PostCell.swift */,
+				CDB632841F8BD3B100375E30 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -344,6 +350,8 @@
 				CDE670421E9E825000D73EB7 /* Bordered.swift in Sources */,
 				CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */,
 				CDDB47B41F856992001EC058 /* FeedVC.swift in Sources */,
+				CD36091A1F8AC209002D46A3 /* PostCell.swift in Sources */,
+				CDB632851F8BD3B100375E30 /* CircleView.swift in Sources */,
 				CDDB47B21F856643001EC058 /* Constants.swift in Sources */,
 				CDE670371E9E755C00D73EB7 /* CustomTextField.swift in Sources */,
 				CDE670401E9E810B00D73EB7 /* Rounded.swift in Sources */,

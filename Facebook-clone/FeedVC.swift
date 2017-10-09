@@ -12,6 +12,9 @@ import SwiftKeychainWrapper
 
 class FeedVC: UIViewController {
 
+  @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var addPhotoImageView: UIImageView!
+  
   @IBAction func signOutButtonPressed(_ sender: Any) {
     do {
       try Auth.auth().signOut()
@@ -23,8 +26,34 @@ class FeedVC: UIViewController {
   }
   
   override func viewDidLoad() {
-        super.viewDidLoad()
+    tableView.delegate = self
+    tableView.dataSource = self
+    
+  }
+}
 
-        // Do any additional setup after loading the view.
+
+
+extension FeedVC: UITableViewDataSource{
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    let cell = tableView.dequeueReusableCell(withIdentifier: Key.POST_CELL_IDENTIFIER) as? PostCell
+    
+    if let postCell = cell {
+      postCell.backgroundColor = UIColor.clear
+      return postCell
+    } else {
+      return UITableViewCell()
     }
+  }
+}
+
+
+extension FeedVC: UITableViewDelegate{
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    // code to perform when a cell is pressed
+  }
 }
