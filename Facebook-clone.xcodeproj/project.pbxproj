@@ -11,6 +11,7 @@
 		CD36091A1F8AC209002D46A3 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3609191F8AC209002D46A3 /* PostCell.swift */; };
 		CD653CB81E9A794700731678 /* Varsity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD653CB71E9A794700731678 /* Varsity.ttf */; };
 		CDB632851F8BD3B100375E30 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB632841F8BD3B100375E30 /* CircleView.swift */; };
+		CDB632871F8BDF1700375E30 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB632861F8BDF1700375E30 /* FirebaseService.swift */; };
 		CDDB47B21F856643001EC058 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB47B11F856643001EC058 /* Constants.swift */; };
 		CDDB47B41F856992001EC058 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB47B31F856992001EC058 /* FeedVC.swift */; };
 		CDE670351E9E752500D73EB7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE670341E9E752500D73EB7 /* CustomButton.swift */; };
@@ -35,6 +36,7 @@
 		CD3CFAF41F8390A6008495C1 /* Facebook-clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Facebook-clone.entitlements"; sourceTree = "<group>"; };
 		CD653CB71E9A794700731678 /* Varsity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Varsity.ttf; path = Ressources/Varsity.ttf; sourceTree = "<group>"; };
 		CDB632841F8BD3B100375E30 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		CDB632861F8BDF1700375E30 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		CDDB47B11F856643001EC058 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CDDB47B31F856992001EC058 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		CDE670341E9E752500D73EB7 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		CDE6BC831E9A47230036FD8C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CDB632861F8BDF1700375E30 /* FirebaseService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				CDE6BC9D1E9A48D50036FD8C /* SignInVC.swift in Sources */,
 				CDE670351E9E752500D73EB7 /* CustomButton.swift in Sources */,
+				CDB632871F8BDF1700375E30 /* FirebaseService.swift in Sources */,
 				CDE670421E9E825000D73EB7 /* Bordered.swift in Sources */,
 				CDE6BC631E9A44110036FD8C /* AppDelegate.swift in Sources */,
 				CDDB47B41F856992001EC058 /* FeedVC.swift in Sources */,

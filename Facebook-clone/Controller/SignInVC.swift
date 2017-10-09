@@ -42,7 +42,7 @@ class SignInVC: UIViewController {
       else {
         print("Yoann: Successfully authenticated with Firebase")
         if let user = user {
-          self.completeSignIn(user: user)
+          self.completeSignIn(user: user, providerID: credential.provider)
         }
       }
     }
@@ -54,9 +54,10 @@ class SignInVC: UIViewController {
     facebookLoginButton.setFATitleColor(color: .white, forState: .normal)
   }
   
-  func completeSignIn(user: User) {
+  func completeSignIn(user: User, providerID: String) {
     let result = KeychainWrapper.standard.set(user.uid, forKey: Key.KEY_UID)
-    print(result)
+    let userData: Dictionary<String, String> = ["provider": providerID]
+    FirebaseService.sharedInstance.createFirebaseDBUser(uid: user.uid, userData: userData)
     performSegue(withIdentifier: Key.SIGNIN_TO_FEED_SEGUE_NAME, sender: Any?)
   }
   
@@ -88,7 +89,7 @@ class SignInVC: UIViewController {
         if error == nil {
           print("Successfully authenticated with Email")
           if let user = user {
-            self.completeSignIn(user: user)
+            self.completeSignIn(user: user, providerID: Key.Firebase.EMAIL_PROVIDER_KEY)
           }
         } else {
           Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -97,7 +98,7 @@ class SignInVC: UIViewController {
             } else {
               print("Successfully authenticated with Email")
               if let user = user {
-                self.completeSignIn(user: user)
+                self.completeSignIn(user: user, providerID: Key.Firebase.EMAIL_PROVIDER_KEY)
               }
             }
           })

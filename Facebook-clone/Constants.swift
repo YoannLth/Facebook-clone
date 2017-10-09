@@ -13,4 +13,10 @@ struct Key {
   static let SIGNIN_TO_FEED_SEGUE_NAME = "goToFeed"
   static let FEED_TO_SIGNIN_SEGUE_NAME = "goToSignIn"
   static let POST_CELL_IDENTIFIER = "PostCell"
+  
+  struct Firebase {
+    static let POSTS_REF = "posts"
+    static let USERS_REF = "users"
+    static let EMAIL_PROVIDER_KEY = "email"
+  }
 }
