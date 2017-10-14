@@ -28,6 +28,19 @@ class PostCell: UITableViewCell {
   func configureCell(post: Post) {
     postTextField.text = post.caption
     likesLabel.text = "\(post.likes) likes"
-    postImageView.kf.setImage(with: URL(string: post.imageUrl))
+
+    if let imageURL = post.imageUrl {
+      let ref = storage.storage.reference(forURL: imageURL)
+      
+      ref.downloadURL(completion: { (url, error) in
+        if error != nil {
+          print("error: \(error)")
+        }
+        
+        if let imageURL = url {
+          self.postImageView.kf.setImage(with: imageURL)
+        }
+      })
+    }
   }
 }

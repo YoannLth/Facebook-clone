@@ -12,11 +12,23 @@ import SwiftKeychainWrapper
 
 class FeedVC: UIViewController {
 
+  // MARK: Outlets
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var addPhotoImageView: UIImageView!
   
-  var posts = [Post]()
   
+  
+  
+  
+  // MARK: Variables
+  var posts = [Post]()
+  var imagePicker : UIImagePickerController!
+  
+  
+  
+  
+  
+  // MARK: Actions
   @IBAction func signOutButtonPressed(_ sender: Any) {
     do {
       try Auth.auth().signOut()
@@ -27,6 +39,15 @@ class FeedVC: UIViewController {
     }
   }
   
+  @IBAction func addImageButtonPressed(_ sender: Any) {
+    present(imagePicker, animated: true, completion: nil)
+  }
+  
+  
+  
+  
+  
+  // MARK: Functions
   func loadFeed(){
     FirebaseService.sharedInstance.postsRef.observe(DataEventType.value, with: { (snapshot) in
       if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
@@ -41,17 +62,31 @@ class FeedVC: UIViewController {
       }
     })
   }
-  
+}
+
+
+
+
+
+// MARK: Lifecycle
+extension FeedVC {
   override func viewDidLoad() {
     tableView.delegate = self
     tableView.dataSource = self
     
     loadFeed()
+    
+    imagePicker = UIImagePickerController()
+    imagePicker.allowsEditing = true
+    imagePicker.delegate = self
   }
 }
 
 
 
+
+
+// MARK: UITableView
 extension FeedVC: UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
     return posts.count
@@ -71,9 +106,22 @@ extension FeedVC: UITableViewDataSource{
   }
 }
 
-
 extension FeedVC: UITableViewDelegate{
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     // code to perform when a cell is pressed
+  }
+}
+
+
+
+
+
+// MARK: UIImagePicker
+extension FeedVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+      addPhotoImageView.image = image
+    }
+    imagePicker.dismiss(animated: true, completion: nil)
   }
 }

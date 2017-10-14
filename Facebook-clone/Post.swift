@@ -10,7 +10,7 @@ import Foundation
 
 class Post {
   private var _caption: String!
-  private var _imageUrl: String!
+  private var _imageUrl: String?
   private var _likes: Int!
   private var _postKey: String!
   //private var _postRef: FIRDatabaseReference!
@@ -19,7 +19,7 @@ class Post {
     return _caption
   }
   
-  var imageUrl: String {
+  var imageUrl: String? {
     return _imageUrl
   }
   

@@ -18,5 +18,6 @@ struct Key {
     static let POSTS_REF = "posts"
     static let USERS_REF = "users"
     static let EMAIL_PROVIDER_KEY = "email"
+    static let POST_PICTURES_REF = "post_pictures"
   }
 }
