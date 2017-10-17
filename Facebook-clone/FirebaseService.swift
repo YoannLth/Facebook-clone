@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import SwiftKeychainWrapper
 
 let db = Database.database().reference()
 let storage = Storage.storage().reference()
@@ -35,11 +36,30 @@ class FirebaseService {
     return _baseRef
   }
   
-  var postPicturesRef: StorageReference{
+  var postPicturesRef: StorageReference {
     return _postPicturesRef
+  }
+  
+  var currentUserRef: DatabaseReference {
+    let uid = KeychainWrapper.standard.string(forKey: Key.KEY_UID)
+    let user = usersRef.child(uid!)
+    return user
   }
   
   func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
     _usersRef.child(uid).updateChildValues(userData)
+  }
+  
+  func getUserById(id: String, completionHandler: @escaping (_ avatarURL: String, _ username: String) -> ()) {
+    let ref = _usersRef.child(id)
+    
+    ref.observeSingleEvent(of: .value, with: { (snapshot) in
+      if let userDict = snapshot.value as? [String:Any] {
+        //Do not cast print it directly may be score is Int not string
+        if let avatarURL = userDict["avatar"] as? String, let username = userDict["username"] as? String {
+          completionHandler(avatarURL, username)
+        }
+      }
+    })
   }
 }

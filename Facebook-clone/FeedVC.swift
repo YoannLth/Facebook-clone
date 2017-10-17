@@ -14,6 +14,7 @@ class FeedVC: UIViewController {
 
   // MARK: Outlets
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var postTextField: UITextField!
   @IBOutlet weak var addPhotoImageView: UIImageView!
   
   
@@ -22,7 +23,7 @@ class FeedVC: UIViewController {
   
   // MARK: Variables
   var posts = [Post]()
-  var imagePicker : UIImagePickerController!
+  var imagePicker: UIImagePickerController!
   
   
   
@@ -48,19 +49,38 @@ class FeedVC: UIViewController {
   
   
   // MARK: Functions
-  func loadFeed(){
+  func loadFeed() {
     FirebaseService.sharedInstance.postsRef.observe(DataEventType.value, with: { (snapshot) in
       if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+        var posts = [Post]()
         for snap in snapshot {
           if let postDict = snap.value as? Dictionary<String, AnyObject> {
             let key = snap.key
             let post = Post(postKey: key, postData: postDict)
-            self.posts.append(post)
+            posts.append(post)
           }
         }
+        self.posts = posts
         self.tableView.reloadData()
       }
     })
+  }
+  
+  func postToFirebase(imgUrl: String) {
+    let post: Dictionary<String, AnyObject> = [
+      "caption": postTextField.text! as AnyObject,
+      "imageURL": imgUrl as AnyObject,
+      "likes": 0 as AnyObject,
+      "comments": 0 as AnyObject
+    ]
+    
+    let firebasePost = FirebaseService.sharedInstance.postsRef.childByAutoId()
+    firebasePost.setValue(post)
+    
+    postTextField.text = ""
+    addPhotoImageView.image = UIImage(named: "add_photo")
+    
+    tableView.reloadData()
   }
 }
 
@@ -73,6 +93,7 @@ extension FeedVC {
   override func viewDidLoad() {
     tableView.delegate = self
     tableView.dataSource = self
+    self.postTextField.delegate = self
     
     loadFeed()
     
@@ -87,7 +108,7 @@ extension FeedVC {
 
 
 // MARK: UITableView
-extension FeedVC: UITableViewDataSource{
+extension FeedVC: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
     return posts.count
   }
@@ -106,7 +127,7 @@ extension FeedVC: UITableViewDataSource{
   }
 }
 
-extension FeedVC: UITableViewDelegate{
+extension FeedVC: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     // code to perform when a cell is pressed
   }
@@ -123,5 +144,48 @@ extension FeedVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
       addPhotoImageView.image = image
     }
     imagePicker.dismiss(animated: true, completion: nil)
+  }
+}
+
+
+
+
+
+// MARK: UITextField
+extension FeedVC: UITextFieldDelegate {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    if textField == self.postTextField {
+      textField.resignFirstResponder()
+      
+      guard let caption = postTextField.text, caption != "" else {
+        return false
+      }
+      
+      guard let image = addPhotoImageView.image else {
+        return false
+      }
+      
+      if let imageData = UIImageJPEGRepresentation(image, 0.2) {
+        let imgUid = NSUUID().uuidString
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpeg"
+        
+        FirebaseService.sharedInstance.postPicturesRef.child(imgUid).putData(imageData, metadata: metadata) { (metadata, error) in
+          if error != nil {
+            print("Unable to upload image to Firebasee torage")
+          } else {
+            print("Successfully uploaded image to Firebase storage")
+            metadata?.storageReference
+            let downloadURL = metadata?.downloadURL()?.absoluteString
+            if let url = downloadURL {
+              self.postToFirebase(imgUrl: url)
+            }
+          }
+        }
+      }
+      
+      return false
+    }
+    return true
   }
 }

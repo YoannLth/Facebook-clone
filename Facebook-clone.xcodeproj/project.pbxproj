@@ -116,7 +116,6 @@
 				CDE6BC7F1E9A45290036FD8C /* Controller */,
 				CDE6BC831E9A47230036FD8C /* Services */,
 				CDE6BC841E9A47520036FD8C /* Extensions */,
-				CDE6BC821E9A47060036FD8C /* Helpers */,
 				CDE6BC811E9A45380036FD8C /* Ressources */,
 				CDE6BC621E9A44110036FD8C /* AppDelegate.swift */,
 			);
@@ -172,13 +171,6 @@
 				CDE6BC9E1E9A48E90036FD8C /* Assets.xcassets */,
 			);
 			name = Ressources;
-			sourceTree = "<group>";
-		};
-		CDE6BC821E9A47060036FD8C /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Helpers;
 			sourceTree = "<group>";
 		};
 		CDE6BC831E9A47230036FD8C /* Services */ = {
