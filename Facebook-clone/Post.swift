@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 
 class Post {
-  // MARK: Variables
+  // MARK: - Variables
   private var _caption: String!
   private var _imageUrl: String?
   private var _likes: Int!
@@ -52,7 +52,7 @@ class Post {
   
   
   
-  // MARK: Init
+  // MARK: - Init
   init(caption: String, imageUrl: String, likes: Int) {
     self._caption = caption
     self._imageUrl = caption
@@ -93,7 +93,7 @@ class Post {
   
   
   
-  // MARK: Function
+  // MARK: - Functions
   func adjustLikes(addLike: Bool) {
     if addLike {
       _likes = _likes + 1

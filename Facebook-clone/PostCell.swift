@@ -12,6 +12,7 @@ import Firebase
 
 class PostCell: UITableViewCell {
   
+  // MARK: - Outlets
   @IBOutlet weak var profilePictureImageView: UIImageView!
   @IBOutlet weak var ownerNameLabel: UILabel!
   @IBOutlet weak var postInfosLabel: UILabel!
@@ -22,9 +23,19 @@ class PostCell: UITableViewCell {
   @IBOutlet weak var commentsLabel: UILabel!
   @IBOutlet weak var commentImageView: UIImageView!
   
+  
+  
+  
+  
+  // MARK: - Variables
   var likeRef: DatabaseReference!
   var post: Post!
   
+  
+  
+  
+  
+  // MARK: - Functions
   override func awakeFromNib() {
     super.awakeFromNib()
     

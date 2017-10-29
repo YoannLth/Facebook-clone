@@ -136,9 +136,6 @@ extension SignInVC {
 
 
 extension SignInVC : UITextFieldDelegate {
-  // TODO: Hide when keyboard tapped elsewhere
-  // TODO: Display alerts
-  
   func registerForKeyboardNotifications() {
     //Adding notifies on keyboard appearing
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)

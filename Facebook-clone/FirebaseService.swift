@@ -14,14 +14,12 @@ let db = Database.database().reference()
 let storage = Storage.storage().reference()
 
 class FirebaseService {
+  
+  // MARK: - Variables
   static let sharedInstance = FirebaseService()
-  
-  private init(){}
-  
   private var _postsRef = db.child(Key.Firebase.POSTS_REF)
   private var _usersRef = db.child(Key.Firebase.USERS_REF)
   private var _baseRef = db
-  
   private var _postPicturesRef = storage.child(Key.Firebase.POST_PICTURES_REF)
   
   var postsRef: DatabaseReference {
@@ -46,6 +44,17 @@ class FirebaseService {
     return user
   }
   
+  
+  
+  
+  // MARK: - Initializer
+  private init(){}
+  
+  
+  
+  
+  
+  // MARK: - Functions
   func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
     _usersRef.child(uid).updateChildValues(userData)
   }

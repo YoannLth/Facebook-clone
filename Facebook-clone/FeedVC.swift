@@ -127,12 +127,6 @@ extension FeedVC: UITableViewDataSource {
   }
 }
 
-extension FeedVC: UITableViewDelegate {
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    // code to perform when a cell is pressed
-  }
-}
-
 
 
 
